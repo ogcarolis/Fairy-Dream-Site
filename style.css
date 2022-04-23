@@ -1,0 +1,340 @@
+body {
+    background-color: #9358A4;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#titulo {
+    display:flex;
+    justify-content: center;
+}
+
+#logo {
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+
+#nomeloja {
+    display: flex;
+    margin-top: 50px;
+    color: #ECDDED;
+    font-size: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.informacoes {
+    background-color: #DB66FF;
+    padding: 15px;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#inicio {
+    position: relative;
+    border: solid 0px #DB66FF;
+    padding: 15px;
+}
+
+#inicio:hover{
+    transition: background-color, 0.5s;
+    background-color: #D39FE3; 
+}
+
+#sobrenos {
+    position: relative;
+    padding: 15px;
+}
+
+#sobrenos:hover{
+    transition: background-color, 0.5s;
+    background-color: #D39FE3; 
+}
+
+#roupas {
+    position: relative;
+    padding: 15px;
+}
+
+#roupas:hover{
+    transition: background-color, 0.5s;
+    background-color: #D39FE3; 
+}
+
+#contato {
+    position: relative;
+    padding: 15px;
+}
+
+#contato:hover{
+    transition: background-color, 0.5s;
+    background-color: #D39FE3; 
+}
+
+.conteudoinicio {
+    display: flex;
+}
+
+.conteudo {
+    background-color: #ECB3ED;
+    font-size: 20px;
+    margin: 5px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    float: left;
+    width: 75%;
+}
+
+.conteudo h1 {
+    margin: 10px;
+}
+
+.conteudo span {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.fotoroupa {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#foto {
+    align-content: right;
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+#foto img {
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.produtos img {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.produtos:hover{
+    transition: background-color, 0.5s;
+    transition: box-shadow, 0.5s;
+    background-color: #ECDDED;
+    box-shadow: -4px 15px 42px 19px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.produtos {
+    display: grid;
+    text-align: center;
+    margin: 5px;
+}
+
+.produtos p {
+    margin: 5px;
+}
+
+#redessociais {
+    font-size: 20px;
+    position: relative;
+    background-color: #ECB3ED;
+    border-radius: 10px;
+    height: 186px;
+    margin-bottom: 5px;
+}
+#redessociais img {
+    border-radius: 100%;
+    max-width: 70px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.redessociaislogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    align-items: center;
+    padding: 10px;
+}
+
+.imagemredesocial {
+    transition: 0.3s;
+}
+
+.imagemredesocial:hover {
+    opacity: 50%;
+}
+
+.sobrenosmain {
+    font-size: 20px;
+    background-color: #ECB3ED;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sobrenosmain img {
+    max-width: 250px;
+    border-radius: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat();
+}
+
+#sobrenosimagem {
+    display: flex;
+    justify-content: center;
+}
+
+#sobrenostexto {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.telefone {
+    position: fixed;
+    bottom: -15px;
+    right: 10px;
+    height: 100px;
+    width: 300px;
+}
+
+.telefone img {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.tel {
+    position: absolute;
+    height: 60px;
+    background-color: #DB66FF;
+    color: white;
+    margin-top: -5px;
+    padding: 10px;
+    left: -50px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.telefone img:hover + .tel {
+    opacity: 1;
+}
+
+.tel p {
+    margin: 0;
+}
+
+.contatoinformacoes {
+    font-size: 20px;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    display: grid;
+    text-align: center;
+}
+
+#email {
+    background-color: #ECB3ED;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#email p {
+    padding: 10px;
+}
+
+#contatotelefone {
+    background-color: #ECB3ED;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#contatotelefone p {
+    padding: 10px;
+}
+
+#instagramcontato {
+    background-color: #ECB3ED;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#instagramcontato p {
+    padding: 10px;
+}
+
+#saiasbloco {
+    background-color: #ECB3ED;
+    font-size: 17px;
+    margin: 5px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 99%;
+}
+
+#saiasbloco h1 {
+    margin: 10px;
+    padding: 5px;
+}
+
+#saiasbloco img {
+    text-align: center;
+}
+
+.saiascompras {
+    display: grid;
+    text-align: center;
+    margin: 5px;
+}
+
+#camisetasbloco {
+    background-color: #ECB3ED;
+    font-size: 17px;
+    margin: 5px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 99%;
+}
+
+#camisetasbloco h1 {
+    margin: 10px;
+    padding: 5px;
+}
+
+#contatoinformacoes {
+    width: 99%;
+    line-height: 0px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .colunadireita {
+        width: 100%;
+        padding: 0;
+    }
+
+}
